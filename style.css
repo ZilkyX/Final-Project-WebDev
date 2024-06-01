@@ -11,13 +11,85 @@
     --text-color-primary: #f5f5f5;
     --text-color-secondary: #222;
 }
-
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins" , sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+  }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .overlay .nav-link.active {
+    max-width: 20%; 
+    width: 50px;
+    background-color: lightblue;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  @keyframes activeLinkAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .nav-link.active {
+    color: red;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item.clicked {
+    border: 2px solid blue; 
+    border-radius: 20px;
+    background-color: lightblue; 
+  }
+  
+  .nav-link.active:hover {
+    color: blue; 
+  }
 
 section{
     padding-left: 10px;

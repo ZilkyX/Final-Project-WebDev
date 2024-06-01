@@ -1,3 +1,18 @@
+
+function openNav() {
+    document.getElementById("menu-overlay").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("menu-overlay").style.width = "0%";
+  }
+  $(document).ready(function(){
+    $('.navbar-nav .nav-link').on('click', function(){
+      $('.navbar-nav .nav-item').removeClass('clicked');
+      $(this).parent().addClass('clicked');
+    });
+  });
+  
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 
