@@ -1,0 +1,128 @@
+:root {
+    --background-color: #1c1d27;
+    --background-color2:#6f18de;
+    --background-color3: #adb8a7;
+    --primary-color: #2a2185;
+    --secondary-color: #4D5850;
+    --tertiary-color:#3d5544;
+    --border-color:#383838;
+    --text-color-primary: #f5f5f5;
+    --text-color-secondary: #222;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins" , sans-serif;
+}
+
+section{
+    padding-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box {
+	border-radius: 150px;
+	background: var(--background-color3);
+	position:relative;
+	overflow: hidden;
+	text-align:center;
+    width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.30);
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to right, #8F9B87 0%, #4D5850 100%);
+}
+.box:hover:before {
+    width: 100%;
+    
+}
+.box:hover .image-wrapper {
+	padding:0;
+}
+.box:hover .box-desc {
+	color:var(--text-color-primary);
+}
+.box:hover .social li a {
+	background:var(--secondary-color);
+	background-image: none;
+	color:var(--text-color-secondary);
+}
+.box:hover .social li a:hover {
+	background:var(--background-color);
+	color:var(--border-color);
+}
+.image-wrapper {
+    position: relative;
+	max-width: 210px;
+    max-height: 210px;
+	margin:0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.20);
+}
+.image-wrapper img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.box-desc {
+	position:relative;
+}
+ul.social {
+	padding: 30px;
+}
+ul.social li {
+	display:inline-block;
+	list-style-type:none;
+}
+ul.social li a {
+	position:relative;
+	width: 36px;
+    height: 36px;
+	background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--tertiary-color) 100%);
+	display:inline-block;
+	line-height:36px;
+	border-radius:50%;
+	color:#fff;
+	transition: all .5s ease;
+}
+
+.aboutus-text{
+    margin-left: 25px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    max-width: 600px;
+    min-width: 100px;
+}
+span{
+    font-weight: bold;
+}
+.h3{
+    margin-left: 40px;
+}
+h5{
+    padding: 10px;
+}
+.developer-type{
+    font-size: 0.8rem;
+    padding: 10px;
+}
