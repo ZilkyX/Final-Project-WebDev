@@ -400,4 +400,65 @@ span {
   }
 }
 
+/*Footer Section/
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: larger;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: large;
+  
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: #f8f9fa;
+}
+
+.footer form {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.footer form input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  margin-bottom: 0; 
+  max-width: 300px; 
+}
+
+.footer form button {
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  margin-left: 0; 
+  text-align: right;
+}
+
+.footer form button:hover {
+  background-color: #0056b3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /*News Page*/
