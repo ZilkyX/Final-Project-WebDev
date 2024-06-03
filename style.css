@@ -326,67 +326,78 @@ span {
     margin-left:600px;
 }
 
-/*Currencies*/
+/* Currencies Page */
 .table-container {
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: var(--background-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: var(--primary-text-color);
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: var(--primary-text-color);
+  overflow-x: auto; 
 }
 
 .currency-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .currency-table th, .currency-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid var(--secondary-text-color);
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-text-color);
 }
 
 .currency-table th {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--hover-text-color); 
 }
 
 .currency-table tr:hover {
-    background-color: var(--hover-background-color);
+  background-color: var(--hover-background-color);
+  transition: background-color 0.3s ease; 
 }
 
 .currency-table tbody tr:last-child td {
-    border: none;
+  border: none;
 }
 
 .centered-title {
-   
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .currency-table button {
-    padding: 6px 12px;
-    background-color: var(--button-background-color);
-    color: var(--hover-text-color);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 6px 12px;
+  background-color: var(--button-background-color);
+  color: var(--hover-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 
 .currency-table button:hover {
-    background-color: var(--hover-background-color);
+  background-color: var(--hover-background-color);
 }
 
 .converter-container {
-    max-width: 400px;
-    margin: 20px auto; 
-    padding: 20px;
-    background-color: var(--background-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: var(--primary-text-color);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: var(--primary-text-color);
+  text-align: center; 
 }
+
+@media (max-width: 768px) {
+  .table-container {
+      overflow-x: auto; 
+  }
+}
+
 /*News Page*/
