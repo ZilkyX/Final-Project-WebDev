@@ -47,12 +47,63 @@
     </div>
   </section>
 
-  <section id="currencies">
-    <div class="title-container">
-      <h1>Currencies</h1>
-      <hr>
-    </div>
-  </section>
+   <section id="currencies">
+        <h1>Currencies</h1>
+        <h1 class="centered-title">USD Currency Exchange Rate</h1>
+        <div class="table-container">
+            <table class="currency-table">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Name</th>
+                        <th>Exchange Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Philippine Peso</td>
+                        <td>58.52</td>
+                    </tr>
+                    <tr>
+                        <td>GBP</td>
+                        <td>British Pound</td>
+                        <td>1.30</td>
+                    </tr>
+                    <tr>
+                        <td>JPY</td>
+                        <td>Japanese Yen</td>
+                        <td>0.009</td>
+                    </tr>
+                    <tr>
+                        <td>AUD</td>
+                        <td>Australian Dollar</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>CAD</td>
+                        <td>Canadian Dollar</td>
+                        <td>0.80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="converter-container">
+            <h2>Currency Converter</h2>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <label for="from-currency">From Currency:</label>
+            <select id="from-currency"></select>
+
+            <label for="to-currency">To Currency:</label>
+            <select id="to-currency"></select>
+
+            <button onclick="convertCurrency()">Convert</button>
+
+            <div class="result" id="result"></div>
+        </div>
+    </section>
 
   <section id="cryptocurrency">    
     <div class="title-container">
