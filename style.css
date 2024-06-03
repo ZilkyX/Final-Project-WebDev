@@ -307,5 +307,20 @@ span {
   }
 }
 
+.our-goal-text{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-left: 600px;
+  margin-top: -400px;
+  text-align: justify;
+  max-width: fit-content;
+  min-width: auto;
+  margin-right: 25px;
+}
+
+.our-goal-h3{
+  margin-left:600px;
+}
+
 
 /*News Page*/
