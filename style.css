@@ -538,11 +538,10 @@ main > div > a {
 }
 
 main > div > a:hover {
-  border: 0.125rem solid #005baa;
+  border: 0.525rem solid #fff;
   background-color: var(--primary-text-color);
   color: #fff;
 }
-
 .swiper {
   width: 100%;
   padding-top: 1.125rem;
