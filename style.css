@@ -485,7 +485,7 @@ main {
 main > div span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #717171;
 }
 
@@ -510,7 +510,7 @@ main > div hr {
   display: block;
   background: #005baa;
   height: 0.25rem;
-  width: 6.25rem;
+  width: 20.25rem;
   border: none;
   margin: 1.125rem 0 1.875rem 0;
 }
