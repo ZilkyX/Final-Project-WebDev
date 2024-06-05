@@ -6,17 +6,41 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <link rel="stylesheet" href="style.css">
+
+  <script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('wzhcmgbb5ea6');
+  </script>
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="main_logo-removebg-preview.png" alt="MainLogo" width="auto" height="48">
+        <img src="img\main_logo-removebg-preview.png" alt="MainLogo" width="auto" height="48">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,286 +66,123 @@
       </div>
     </div>
   </nav>
+
   <section id="home">
     <div class="title-container">
       <h1>Home</h1>
       <hr>
-      <main>
-        <div>
-          <span>discover</span>
-          <h1>Currencies</h1>
-          <hr>
-          <p>You can view currencies from various countries through our platform, gaining insights into global economic trends and exchange rates.</p>
-          <a href="#">Subscribe</a>
-        </div>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide--one">
-              <div>
-                <h2>AED</h2>
-                <p>The United Arab Emirates dirham (AED) is the currency of the United Arab Emirates.</p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--two">
-              <div>
-                <h2>AFN</h2>
-                <p>
-                  The afghani AFN is the official currency of Afghanistan since the 1920s. 
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--three">
-              <div>
-                <h2>All</h2>
-                <p>
-                  The currency is managed by the Bank of Albania and is used for all financial transactions within the country.
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--four">
-              <div>
-                <h2>AMD</h2>
-                <p>
-                  The AMD currency is the abbreviation for the Armenian Dram. It's the official currency of Armenia.
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide--five">
-              <div>
-                <h2>ANG</h2>
-                <p>
-                  The currency code "ANG" stands for the Netherlands Antillean guilder, the official currency of Curaçao and Sint Maarten.
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        </main>
-        <div id="main">
-          <h1>Cryptocurrency</h1>
-          <hr>
-            <div class="flex-container">
-                <div class="slide">
-                    <div class="item" style="background-image: url(img/ethereumbg.jpg); background-size: cover; background-position:center ;">
-                        <div class="content">
-                            <div class="name">Ethereum</div>
-                            <div class="desc">Ethereum is a decentralized platform that extends blockchain technology beyond digital currency by introducing smart contracts, which are self-executing agreements coded into the blockchain. Its native cryptocurrency, Ether (ETH), powers this innovative ecosystem, enabling the creation and operation of decentralized applications (dApps) that run autonomously without centralized control.</div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(img/bitcoinbg.jpg); background-size: cover; background-position:center ;">
-                        <div class="content">
-                            <div class="name">Bitcoin</div>
-                            <div class="desc">Bitcoin is a revolutionary decentralized digital currency that enables borderless, peer-to-peer transactions without intermediaries, leveraging cryptographic principles and blockchain technology to maintain a secure and immutable ledger. Often likened to digital gold, it serves as both a transformative financial instrument and a store of value characterized by transparency, scarcity, and decentralization.</div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(img/Tetherbg.jpg);background-size: cover; background-position:center ;">
-                        <div class="content">
-                            <div class="name">Tether</div>
-                            <div class="desc">Tether is a unique cryptocurrency designed to maintain a stable value by being pegged to traditional fiat currencies like the US Dollar, providing a digital alternative that mitigates the volatility typically associated with cryptocurrencies. This stability makes Tether an essential tool for traders and investors seeking to preserve value and facilitate transactions within the crypto ecosystem.</div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(img/Cardanobg.png);background-size: cover; background-position:center ;">
-                        <div class="content">
-                            <div class="name">Cardano</div>
-                            <div class="desc">Cardano is a third-generation blockchain platform that emphasizes sustainability, scalability, and interoperability, built on a research-driven and peer-reviewed foundation. Its native cryptocurrency, ADA, enables secure and scalable transactions while supporting the development of decentralized applications (dApps) and smart contracts with a focus on sustainability and social impact.</div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(img/solanabg.png);background-size: cover; background-position: center;">
-                        <div class="content">
-                            <div class="name">Solana</div>
-                            <div class="desc">Solana is a high-performance blockchain platform known for its lightning-fast transaction speeds and low costs, aiming to provide the infrastructure for scalable decentralized applications (dApps). Its native cryptocurrency, SOL, powers the network, facilitating rapid and cost-effective transactions while supporting a growing ecosystem of innovative projects.</div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(img/chainlinkbg.webp);background-size: cover; background-position: center;">
-                        <div class="content">
-                            <div class="name">Chainlink</div>
-                            <div class="desc">Chainlink is a decentralized oracle network that bridges the gap between blockchain-based smart contracts and real-world data, enabling smart contracts to interact with external data sources, APIs, and payment systems securely. Its native cryptocurrency, LINK, incentivizes data providers and ensures the integrity and reliability of the data fed into smart contracts, enhancing their utility and functionality.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="button">
-                    <button class="prev" title="Previous"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="next" title="Next"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-        <div id="choose-us" class="container1">
-        <div class="center-div">
-            <h2>Why you choose Us?</h2>
-            <p>Our CoinSwitch viewer system offers numerous advantages that cater to both novice and experienced users alike. With real-time updates, you can stay informed about the latest currency exchange rates and cryptocurrency prices, empowering you to make informed investment decisions.</p>
-        </div>
-        <div class="choices">
-            <div class="left-top">
-                <div class="left-top-circle">
-                    <img src="img/currency.png" alt="highquality"/>
-                </div>
-                <div class="left-top-text">
-                    <h3>Real-Time Updates</h3>
-                    <p>Keep yourself well-informed and up-to-date with live, minute-by-minute updates on currency exchange rates, ensuring you are always in sync with the latest happenings.</p>
-                </div>
-            </div>
-            <div class="right-top">
-                <div class="right-top-circle">
-                    <img src="img/user.jpg"alt="backup" style=" border-radius:50px;"/>
-                </div>
-                <div class="right-top-text">
-                    <h3>User-friendly Interface</h3>
-                    <p>Navigate effortlessly through our platform with its thoughtfully crafted, user-friendly interface, designed to cater to individuals of all proficiency levels, ensuring even those new to the world of cryptocurrencies can easily find their way around and make the most of our services.</p>
-                </div>
-            </div>
-            <div class="right-bottom">
-                <div class="right-bottom-circle">
-                    <img src="img/crypto.png" alt="smart"/>
-                </div>
-                <div class="right-bottom-text">
-                    <h3>Diverse Cryptocurrency Coverage</h3>
-                    <p>Dive into a vast array of cryptocurrencies available on our platform, each offering its unique set of features and performance metrics, allowing you to explore and analyze the diverse range of options available in the digital asset space.</p>
-                </div>
-            </div>
-            <div class="left-bottom">
-                <div class="left-bottom-circle">
-                    <img src="https://i.ibb.co/G53sbGK/customer.png" alt="customer"/>
-                </div>
-                <div class="left-bottom-text">
-                    <h3>Expert Insights</h3>
-                    <p>Enhance your decision-making process by tapping into the wealth of expert analysis and insights provided by seasoned professionals, empowering you with the knowledge and perspective needed to make well-informed investment decisions in the ever-evolving cryptocurrency market landscape.</p>
-                </div>
-            </div>
-        </div>
-      </div>
-
-        <div id="feature-section" class="feature">
-            <div id="feature">
-                <h2 id="title-header">Features</h2>
-                <hr>
-                <h6 id="sub">We value your time and strive to deliver insightful and practical information tailored to your needs about currrency exchange rates and cryptocurrency.</h6>
-            </div>
-            <div id="features">
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo"></i>
-                    </div>
-                    <h5 id="title-feature">View Realtime</h5>
-                    <p id="text-feature">Stay informed with live updates on cryptocurrency trends and prices using our real-time viewing feature.</p>
-                </div>
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo2"></i>
-                    </div>
-                    <h5 id="title-feature">Currencies</h5>
-                    <p id="text-feature">Stay informed on global currencies with our real-time viewing feature, providing live updates on currency exchange rates.</p>
-                </div>
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo3"></i>
-                    </div>
-                    <h5 id="title-feature">View Crypto</h5>
-                    <p id="text-feature">Effortlessly monitor multiple cryptocurrencies instantly with our real-time viewing feature.</p>
-                </div>
-            </div>
-            <div id="features-2">
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo4"></i>
-                    </div>
-                    <h5 id="title-feature">Convert Currency</h5>
-                    <p id="text-feature">Easily convert currencies with our intuitive currency conversion tool, providing quick and accurate exchange rates.</p>
-                </div>
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo5"></i>
-                    </div>
-                    <h5 id="title-feature">Convert Crypto</h5>
-                    <p id="text-feature">Effortlessly convert cryptocurrencies with our user-friendly crypto conversion API and accurate rates.</p>
-                </div>
-                <div id="feature-container">
-                    <div id="ft-text">
-                        <i id="logo6"></i>
-                    </div>
-                    <h5 id="title-feature">Drift Chat</h5>
-                    <p id="text-feature">Engage seamlessly with our Drift chat feature, enabling real-time communication and support for instant assistance.</p>
-                </div>
-            </div>
-        </div>
     </div>
   </section>
 
-   <section id="currencies">
-        <h1>Currencies</h1>
-        <h1 class="centered-title">USD Currency Exchange Rate</h1>
-        <div class="table-container">
-            <table class="currency-table">
-                <thead>
-                    <tr>
-                        <th>Currency</th>
-                        <th>Currency Name</th>
-                        <th>Exchange Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>PHP</td>
-                        <td>Philippine Peso</td>
-                        <td>58.52</td>
-                    </tr>
-                    <tr>
-                        <td>GBP</td>
-                        <td>British Pound</td>
-                        <td>1.30</td>
-                    </tr>
-                    <tr>
-                        <td>JPY</td>
-                        <td>Japanese Yen</td>
-                        <td>0.009</td>
-                    </tr>
-                    <tr>
-                        <td>AUD</td>
-                        <td>Australian Dollar</td>
-                        <td>0.75</td>
-                    </tr>
-                    <tr>
-                        <td>CAD</td>
-                        <td>Canadian Dollar</td>
-                        <td>0.80</td>
-                    </tr>
-                </tbody>
-            </table>
+  <section id="currencies">
+    <div class="title-container">
+      <h1>Currencies</h1>
+      <hr>
+    </div>
+    <div class="main-container">
+      
+      <div class="table-container">
+        <div class="table-scroll">
+          <table class="currency-table">
+              <thead>
+                  <tr>
+                      <th>Currency</th>
+                      <th>Exchange Rate ($USD)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                  </tr>
+              </tbody>
+          </table>
         </div>
-        <div class="converter-container">
-            <h2>Currency Converter</h2>
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" placeholder="Enter amount">
+      </div>
 
-            <label for="from-currency">From Currency:</label>
-            <select id="from-currency"></select>
 
-            <label for="to-currency">To Currency:</label>
-            <select id="to-currency"></select>
 
-            <button onclick="convertCurrency()">Convert</button>
+      <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
 
-            <div class="result" id="result"></div>
-        </div>
-    </section>
+        <label for="from-currency">From Currency:</label>
+        <select id="from-currency"></select>
+
+        <label for="to-currency">To Currency:</label>
+        <select id="to-currency"></select>
+
+        <button class="convert-btn" onclick="convertCurrency()">Convert</button>
+
+        <div class="result" id="result"></div>
+      </div>
+
+    </div>
+
+  </section>
 
   <section id="cryptocurrency">    
     <div class="title-container">
       <h1>Cryptocurrency</h1>
       <hr>
-    </div></section>
+    </div>
 
+    <div class="crypto-container">
+      <div class="form-group">
+          <label for="fromCurrency">From:</label>
+          <select id="fromCurrency">
+              <option value="BTC">Bitcoin (BTC)</option>
+              <option value="ETH">Ethereum (ETH)</option>
+              <option value="LTC">Litecoin (LTC)</option>
+              <option value="XRP">Ripple (XRP)</option>
+              <option value="BCH">Bitcoin Cash (BCH)</option>
+              <option value="ADA">Cardano (ADA)</option>
+              <option value="DOGE">Dogecoin (DOGE)</option>
+              <option value="DOT">Polkadot (DOT)</option>
+              <option value="UNI">Uniswap (UNI)</option>
+              <option value="LINK">Chainlink (LINK)</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="toCurrency">To:</label>
+          <select id="toCurrency">
+              <option value="USD">US Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="GBP">British Pound Sterling (GBP)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CAD">Canadian Dollar (CAD)</option>
+              <option value="CNY">Chinese Yuan (CNY)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="INR">Indian Rupee (INR)</option>
+              <option value="PHP">Philippine Peso (PHP)</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amountId" placeholder="Enter Value" required>
+      </div>
+      <button onclick="convertCryptoCurrency()" class="convert-btn">Convert</button>
+      <div class="result" id="cryptoResult"></div>
+  </div>
+  </section>
 
   <section id="latestNews">
     <div class="title-container">
       <h1>Latest News</h1>
       <hr>
     </div>
+
+    <div class="container">
+      <div class="row" id="newsRow">
+
+        <div class="error" style="display: flex; justify-content: center; flex-direction: column;">
+          <h1 style="color: #4D5850">Please Open the websocket to view latest new!</h1>
+          <img src="img\error-removebg-preview (1).png" style="height: auto; width: auto;" alt="Error!" >
+        </div>
+      </div>
+    </div>
+     
   </section>
 
   <section id="aboutUs">
@@ -344,17 +205,14 @@
                 Because of these users can retrieve useful information that can help them in decision-making.
                 </p>
             </div>
-            <div>
-                <img class="about-us-icon" src="about-us_icon.png" alt="">
-            </div>
         </div>
     </div>
     <hr>
-    <div class="our-goal">
-        <h3 class="our-goal-h3">Our Goal</h3>
+    <div class="aboutus-text-container">
+        <h3>Our Goal</h3>
         <img class="our-goal-icon" src="our-goal_icon.png" alt="">
         
-        <p class="our-goal-text">The primary goal of our webpage is to serve as a reliable hub for accessing real-time and precise currency values, catering to the diverse needs of users seeking to convert one currency to another seamlessly. In addition to offering a robust currency conversion tool, our platform is designed to keep users informed about the latest updates and developments in the world of currencies. <br>
+        <p class="aboutus-text">The primary goal of our webpage is to serve as a reliable hub for accessing real-time and precise currency values, catering to the diverse needs of users seeking to convert one currency to another seamlessly. In addition to offering a robust currency conversion tool, our platform is designed to keep users informed about the latest updates and developments in the world of currencies. <br>
             <br>
             Beyond facilitating currency conversions, our webpage serves as a valuable resource for staying abreast of economic fluctuations and trends that impact currency values. Through curated news reports and analyses, we provide insights into the dynamic forces shaping the global economy, with a particular focus on how these factors influence the valuation of currencies. <br> </p>
     </div>
@@ -369,21 +227,21 @@
         <div class="container">
             <div class="box shadow-sm p-4">
                 <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="Zilyan Kyle Lorenzo">
+                    <img class="img-fluid" src="img\zk1.jpg" alt="Zilyan Kyle Lorenzo" style="object-fit: cover;">
                 </div>
                 <div class="box-desc">
                     <h5>Zilyan Kyle Lorenzo</h5>
                     <p class="developer-type">Back-end Developer</p>
                 </div>
                 <ul class="social">
-                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                  <li><a href="#"><i class="bi bi-github"></i></a></li>
+                  <li><a href="https://web.facebook.com/zilyankyle.lorenzo"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/kyler.0808/"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://github.com/ZilkyX"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
             <div class="box shadow-sm p-4">
                 <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="Elyzzer Garcia">
+                    <img class="img-fluid" src="img\elyzzer.jpg" alt="Elyzzer Garcia">
                 </div>
                 <div class="box-desc">
                     <h5>Elyzzer Garcia</h5>
@@ -391,14 +249,14 @@
                     <p class="developer-type">Back-end Developer</p>
                 </div>
                 <ul class="social">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/washiwap"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/elygrca/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://github.com/elygarcia023"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
             <div class="box shadow-sm p-4">
                 <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="John Michael Songco">
+                    <img class="img-fluid" src="img\jm1.jpg" alt="John Michael Songco">
                 </div>
                 <div class="box-desc">
                     <h5>John Michael Songco</h5>
@@ -406,54 +264,55 @@
                 </div>
                 <ul class="social">
                     <li><a href="https://www.facebook.com/jmgs21x"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/haell_x/?hl=en"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://github.com/haell22"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
             <div class="box shadow-sm p-4">
                 <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="Robee Andre Manlapig">
+                    <img class="img-fluid" src="img\robee.jpg" alt="Robee Andre Manlapig">
                 </div>
                 <div class="box-desc">
                     <h5>Robee Andre Manlapig</h5>
                     <p class="developer-type">Front-end Developer</p>
                 </div>
                 <ul class="social">
-                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                  <li><a href="#"><i class="bi bi-github"></i></a></li>
+                  <li><a href="https://www.facebook.com/robeeandre.manlapig?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/robee_manlapig?igsh=MWhsbWhiNmxiYnd3Zw=="><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://github.com/robeeandre"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
   </section>
-    <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                  <h5>Sections</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="#" onclick="showSection('home')">Home</a></li>
-                      <li><a href="#" onclick="showSection('currencies')">Currencies</a></li>
-                      <li><a href="#" onclick="showSection('cryptocurrency')">Cryptocurrency</a></li>
-                      <li><a href="#" onclick="showSection('latestNews')">Latest News</a></li>
-                      <li><a href="#" onclick="showSection('aboutUs')">About us</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-6">
-                  <h5>Subscribe to receive the latest updates.</h5>
-                  <form>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                      <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <div class="text-center py-3">&copy; 2024 CoinSwitch All Rights Reserved.</div>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('currencies')">Currencies</a></li>
+                <li><a href="#" onclick="showSection('cryptocurrency')">Cryptocurrency</a></li>
+                <li><a href="#" onclick="showSection('latestNews')">Latest News</a></li>
+                <li><a href="#" onclick="showSection('aboutUs')">About us</a></li>
+             </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Subscribe to receive the latest updates.</h5>
+                <form id="subscribeForm"> 
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  <button type="submit" class="btn mb-3">Subscribe</button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3">&copy; 2024 CoinSwitch All Rights Reserved.</div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
