@@ -1,8 +1,11 @@
 How to setup:
 
 Step 1: Download the zip folder
+
 Step 2: Run the node websocket.js to view the latest news updates
+
 Step 3: Also make sure to install the modules if you don’t have them
+
 Step 4: For more (detailed) information, please open our "documentation" file
 
 Main Features
