@@ -25,7 +25,9 @@ Here are some useful instructions on how to use the webpage:
 
 	Latest News (section 4):
 
-        In this page, there are news displayed on the page. In order to use it, the users only have to scroll down. In each news, there is a “Read More” button that will redirect to the URL of the news itself. In this link, the users can see the full details about the news.
+        In this page, there are news displayed on the page. In order to use it, the users only have to scroll down. In each news, there is a “Read More” button that will redirect to the URL of the news itself. In this link, the users can see the full details about the news. 
+
+        Make sure that the WebSocket is open before running this section. Otherwise, the news that should display will not show at all.
 
 	About Us (section 5):
 
